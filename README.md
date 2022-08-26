@@ -1,3 +1,17 @@
+## Instruction for Running NTU VIRAL Dataset
+
+This is a forked repository of [FAST-LIO2](https://github.com/hku-mars/FAST_LIO.git).
+
+In this repositorie we add extra script and configuration files to quickly run the experiments on [NTU VIRAL dataset](https://ntu-aris.github.io/ntu_viral_dataset/).
+
+1. After you have cloned and compiled the package, please cd to the launch folder by running `roscd fast_lio/launch`.
+
+2. Modify the script `runall_ntuviral.sh` to declare the output directory via the variable `EPOC_DIR`, and the path to the dataset via the `DATASET_LOCATION` variable.
+
+3. Run `bash runall_ntuviral.sh` to automatically launch the algo with the bag files one by one.
+
+4. The log files will be created in .csv format and you can use matlab or python to calculate the localization error against the ground truth on these logs. You can find a [Tutorial](https://ntu-aris.github.io/ntu_viral_dataset/evaluation_tutorial.html) to evalute FAST-LIO2 on the [NTU VIRAL dataset](https://ntu-aris.github.io/ntu_viral_dataset/).
+
 ## Related Works and Extended Application
 
 **SLAM:**
